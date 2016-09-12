@@ -1,2 +1,5 @@
-# es6-foundation-starter
-An ES6 starter with Foundation 6 integration, using Pug, Sass and Gulp, with an emphasis on component based development, BEM and writing JS with XO
+# Angular, Gulp and JSPM
+___
+
+This is an opionated starter for getting (static) sites up and running quickly with AngularJS (1.5.x) and JSPM.  It utilizes a bunch of gulp tasks for the build, and expects Sass to be written with BEM philosophy and ES2015 written in accordnance with ESLint rules, specifically the XO rule set.
+
