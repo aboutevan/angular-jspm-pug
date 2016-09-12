@@ -1,0 +1,58 @@
+{
+  "styles" : {
+    "src" : "dev/client/main.sass",
+    "watch" : [
+    	"dev/client/*.sass",
+    	"dev/client/**/*.{sass,scss}",
+    	"dev/client/**/**/*.{sass,scss}",
+    	"dev/client/**/**/**/*.{sass,scss}"
+    ],
+    "dest" : "dist/assets/css"
+  },
+  "js" : {
+    "src" : "dev/client/main.js",
+    "watch" : [
+    	"dev/client/*.js",
+    	"dev/client/**/*.js",
+    	"dev/client/**/**/*.js",
+    	"dev/client/**/**/**/*.js",
+    	"gulpfile.babel.js",
+    	"tasks/*.js"
+    ],
+    "dest" : "dist/assets/js"
+  },
+  "images" : {
+  	"src" : "dev/client/assets/img/*.{jpeg,png}",
+  	"dest" : "dist/assets/images"
+  },
+  "svg" : {
+  	"src" : "dev/client/assets/svg/*.svg",
+  	"dest" : "dist/assets/svg"
+  },
+  "views" : {
+    "src" : {
+    	"components" : [
+    		"dev/client/app/*.pug",
+    		"dev/client/app/**/*.pug",
+    		"dev/client/app/common/components/*.pug",
+    		"dev/client/app/common/components/**/*.pug",
+    		"dev/client/app/components/*.pug",
+    		"dev/client/app/components/**/*.pug"
+    	],
+    	"pages" : "dev/client/pages/**/*.pug"
+    },
+    "watch" : [
+      "dev/client/*.pug",
+      "dev/client/**/*.pug",
+      "dev/client/**/**/*.pug"
+    ],
+    "dest" : {
+    	"components" : "./",
+    	"pages" : "dist"
+    }
+  },
+  "server" : {
+    "baseDir" : "./dist"
+  }
+}
+
