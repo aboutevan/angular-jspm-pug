@@ -31232,7 +31232,6 @@ System.register('dev/client/app/common/components/index.js', ['github:angular/bo
 System.register('dev/client/app/app.js', ['github:angular/bower-angular@1.5.8.js', 'dev/client/app/common/components/index.js'], function (_export) {
 	'use strict';
 
-	// import AppComponent from './app.component'
 	var angular, Common, app;
 	return {
 		setters: [function (_githubAngularBowerAngular158Js) {
