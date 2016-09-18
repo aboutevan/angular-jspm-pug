@@ -1,0 +1,41 @@
+.project-list
+	
+	ul
+		margin-left: 0
+		padding-left: 0
+		list-style: none
+
+	li
+		+strikeout
+		display: inline
+
+		+breakpoint(large)
+		  display: inline-block
+
+		&:last-child
+
+			&:hover
+
+				&:after
+					width: 99%
+
+	.redacted
+		position: relative
+
+		&:after
+			position: absolute
+			bottom: 0
+			left: 0
+			transition: 0.2s
+			background: $c2
+			width: 90%
+			height: 100%
+			content: ''
+
+		&:hover
+			cursor: pointer
+
+			&:after
+				height: 0
+
+		

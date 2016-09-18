@@ -1,0 +1,26 @@
+.home
+
+	.home__row
+
+		.home__box
+
+			box(props='$ctrl.props.content.projects')
+
+		.home__words
+
+			.home__words-inner
+
+				.home__logo
+					logo(logo-animation)
+
+				.home__words-section
+					p.home__words-title Selected Works
+					project-list.home__words-copy(props='$ctrl.props.content.projects' project-list-focus)
+
+				.home__words-section
+					p.home__words-title About
+					p.home__words-copy  I'm a web developer at Herman-Scheer, on an endless quest for digital Shangri-La. I enjoy clean code and good kickflips.
+
+				.home__words-section
+					p.home__words-title Contact
+					p.home__words-copy  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolore qui, quod ipsa culpa natus optio

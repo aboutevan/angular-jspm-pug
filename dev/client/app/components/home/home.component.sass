@@ -1,0 +1,61 @@
+.home
+	// background: $c3
+
+	&__row
+		+grid-row
+		position: relative
+		padding: 1.5rem
+
+		+breakpoint(medium down)
+		  max-width: rem-calc(600)
+
+		+breakpoint(large)
+			padding: 0 3rem
+		  height: 100vh
+
+	&__box
+		position: relative
+		margin-bottom: rem-calc(40)
+		height: rem-calc(480)
+
+		+breakpoint(large)
+		  position: absolute
+		  top: 5%
+		  right: 3rem
+		  bottom: 5%
+		  margin-bottom: 0
+		  width: 55%
+		  height: auto
+
+	&__words
+
+		+breakpoint(large)
+		  display: table
+		  width: calc(40% - 3rem)
+		  max-width: rem-calc(400)
+		  height: 100vh
+
+	&__words-inner
+
+		+breakpoint(large)
+		  display: table-cell
+		  vertical-align: middle
+
+	&__words-section
+		margin-bottom: rem-calc(30)
+
+	&__words-title
+		@extend %p2
+		margin-bottom: rem-calc(0)
+		color: $c2
+		font-family: $header-font-family
+
+	&__words-copy
+		color: $c2
+
+	&__logo
+		margin-bottom: rem-calc(40)
+		width: rem-calc(60)
+
+		+breakpoint(medium down)
+		  display: none

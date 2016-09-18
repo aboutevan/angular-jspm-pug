@@ -1,9 +1,14 @@
-import angular from 'angular'
-import Common from './common/components/index'
+import angular from 'angular';
+import Common from './common/components/index';
+import Components from './components/index';
+import 'angular-sanitize';
+
 
 const app = angular
 	.module('app', [
-		Common
+		Common,
+		Components,
+		'ngSanitize'
 	])
 	.component('app', [])
 	.name;

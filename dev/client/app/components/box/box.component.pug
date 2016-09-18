@@ -1,0 +1,27 @@
+.box-slider
+
+	.box-slider__default
+		.box-slider__content-layer.box-slider__content-layer--default
+			//- p.box-slider__title {{$ctrl.props.name}}
+			//- p.box-slider__description-mobile {{$ctrl.props.description.mobile}}
+			//- p.box-slider__description-desktop {{$ctrl.props.description.desktop}}
+			//- a.box-slider__link(href='{{$ctrl.props.link.url}}' ng-bind-html='{{$ctrl.props.link.text}}')
+		.box-slider__bg-layer.box-slider__bg-layer--default
+
+			.box-slider__logo
+				logo(logo-animation)
+
+			.box-slider__color-overlay
+
+	//- .box__project-container
+	.box-slider__slide(ng-repeat='slide in $ctrl.props')
+
+		.box-slider__content-layer
+			.box-slider__content
+				h3.box-slider__title {{slide.name}}
+				p.box-slider__description-mobile(ng-if='slide.description.mobile' ng-bind-html='slide.description.mobile')
+				p.box-slider__description-desktop(ng-bind-html='slide.description.desktop')
+				a.box-slider__link(href='{{slide.link.url}}' ng-bind-html='slide.link.text')
+				a.box-slider__link.box-slider__link--two(ng-if='slide.linkTwo' href='{{slide.linkTwo.url}}' ng-bind-html='slide.linkTwo.text')
+
+		.box-slider__bg-layer(ng-style='{ "background-image": "url(/assets/images/{{slide.image.url}})" }')

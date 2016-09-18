@@ -15,14 +15,19 @@ System.config({
 
   map: {
     "angular": "github:angular/bower-angular@1.5.8",
+    "angular-sanitize": "github:angular/bower-angular-sanitize@1.5.8",
     "angular-ui-router": "github:angular-ui/angular-ui-router-bower@0.3.1",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
     "foundation-sites": "npm:foundation-sites@6.2.3",
+    "gsap": "npm:gsap@1.19.0",
     "jquery": "npm:jquery@2.2.4",
     "text": "github:systemjs/plugin-text@0.0.9",
     "github:angular-ui/angular-ui-router-bower@0.3.1": {
+      "angular": "github:angular/bower-angular@1.5.8"
+    },
+    "github:angular/bower-angular-sanitize@1.5.8": {
       "angular": "github:angular/bower-angular@1.5.8"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -69,6 +74,9 @@ System.config({
     "npm:foundation-sites@6.2.3": {
       "jquery": "npm:jquery@2.2.4",
       "what-input": "npm:what-input@2.1.1"
+    },
+    "npm:gsap@1.19.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"

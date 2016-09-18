@@ -1,0 +1,181 @@
+@mixin hover-off
+	transform: translateY(30px)
+	transition: 0.3s
+	opacity: 0
+
+@mixin hover-on
+	transform: translateY(0)
+	opacity: 1
+
+.box-slider
+	position: relative
+	border: solid $c2 7px
+	width: 100%
+	height: 100%
+	overflow: hidden
+
+	+breakpoint(large)
+	  border: solid 14px $c2
+
+	// default (when slider inactive) ///////////////////
+
+	&__default
+		position: relative
+		width: 100%
+		height: 100%
+
+	&__bg-layer
+		position: absolute
+		top: 0
+		left: 0
+		background-position: center
+		background-size: cover
+		width: 100%
+		height: 100%
+
+		// +breakpoint(large)
+		//   z-index: 2
+
+		&--default
+			background-image: url('/assets/images/360762.jpg')
+
+
+	&__color-overlay
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+	&__logo
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+		+breakpoint(large)
+			display: none
+		  // top: auto
+		  // right: 2rem
+		  // bottom: 2rem
+		  // left: auto
+		  // transform: none
+
+
+	// end default ......................................
+
+	&__content-layer
+		position: absolute
+		right: 0
+		bottom: 0
+		z-index: 1
+		border-top: solid 7px $c2
+		border-left: solid 7px $c2
+		background: $c1
+		padding: 0.5rem 0.5rem 0.5rem 1rem
+		text-align: right
+
+		+breakpoint(large)
+		  top: 0
+		  left: 0
+		  transition: .5s
+		  // transform: translateY(100%)
+		  opacity: 0
+		  // z-index: 0
+		  border: none
+		  background: rgba($c3, 0.8)
+		  text-align: left
+
+		&--default
+			display: none
+
+			+breakpoint(large)
+			  display: block
+
+		a
+			color: $c2
+
+			+breakpoint(large)
+			  color: $c1
+
+	&__content
+		color: $c2
+
+		+breakpoint(large)
+		  position: absolute
+		  top: 10%
+		  left: 10%
+		  max-width: 60%
+		  color: $c1
+
+	&__title
+		@extend %h3
+		margin-bottom: rem-calc(10)
+
+		+breakpoint(large)
+		  +hover-off
+
+	&__description-mobile
+		@extend %p2
+		margin-bottom: rem-calc(10)
+
+		+breakpoint(large)
+		  display: none
+
+		a
+			+box-underline
+
+	&__description-desktop
+		display: none
+
+		+breakpoint(large)
+		  +hover-off
+		  display: block
+		  font-family: $header-font-family
+
+	&__link
+		@extend %p2
+		+box-underline
+		display: inline-block
+
+		+breakpoint(large)
+			+hover-off
+			font-family: $header-font-family
+			font-weight: 700
+
+		&--two
+			display: block
+
+			+breakpoint(large)
+			  display: inline-block
+			  margin-left: 1rem
+
+	&__slide
+		position: relative
+		width: 100%
+		height: 100%
+
+		+breakpoint(large)
+
+		  &:hover
+
+		  	.box-slider__content-layer
+		  		opacity: 1
+
+		  	.box-slider__title
+		  		+hover-on
+		  		transition-delay: 200ms
+
+			  .box-slider__description-desktop
+			  	+hover-on
+			  	transition-delay: 300ms
+
+			  .box-slider__link
+			  	+hover-on
+			  	transition-delay: 400ms
+
+
+		&.active
+			position: absolute
+			top: 0
+

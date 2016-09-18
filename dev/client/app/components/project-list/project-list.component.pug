@@ -1,0 +1,4 @@
+.project-list
+
+	ul
+		li.project-list__item(ng-if='$ctrl.props' ng-repeat='project in $ctrl.props') {{project.name}}{{$last ? '' : ',&nbsp;'}}

@@ -6,13 +6,23 @@ html(lang="en")
 
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no")
+
+		//- font awesome
+		//- script(src='https://use.fontawesome.com/c19f3b1749.js')
+
+		//- typekit
+		script(src='https://use.typekit.net/aqa8bip.js')
+		script.
+			try{Typekit.load({ async: true });}catch(e){}
+
 		link(href="assets/css/main.css", rel="stylesheet")
 
-	body
+	body(ng-cloak)
 		.content-main
 			block content
 
-		h1 forever
+		.svg(style='display: none; background: red;')
+			include ../../dist/assets/svg/all.svg
 
 		-var env = 'development'
 
@@ -26,5 +36,3 @@ html(lang="en")
 
 		else
 			script(src='/assets/js/main.js')
-		//- .svg(style='display: none; background: red;')
-		//- 	include ../../dist/assets/svg/all.svg

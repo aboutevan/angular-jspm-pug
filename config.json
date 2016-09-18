@@ -22,7 +22,7 @@
     "dest" : "dist/assets/js"
   },
   "images" : {
-  	"src" : "dev/client/assets/img/*.{jpeg,png}",
+  	"src" : "dev/client/assets/img/*.{jpg,jpeg,png}",
   	"dest" : "dist/assets/images"
   },
   "svg" : {
