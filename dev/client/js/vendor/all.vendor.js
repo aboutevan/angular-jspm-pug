@@ -1,17 +1,17 @@
 // Use jQuery 2.2.x for now until Foundation updates or else errors
-import 'jquery';
+// import 'jquery';
 
 // FOUNDATION -------------------------------------
 // -- core (enable these for plugins below to work)
-import 'foundation-sites/dist/plugins/foundation.core.js';
-import 'foundation-sites/dist/plugins/foundation.util.mediaQuery.js';
-import 'foundation-sites/dist/plugins/foundation.util.box.js';
-import 'foundation-sites/dist/plugins/foundation.util.keyboard.js';
-import 'foundation-sites/dist/plugins/foundation.util.motion.js';
-import 'foundation-sites/dist/plugins/foundation.util.nest.js';
-import 'foundation-sites/dist/plugins/foundation.util.timerAndImageLoader.js';
-import 'foundation-sites/dist/plugins/foundation.util.touch.js';
-import 'foundation-sites/dist/plugins/foundation.util.triggers.js';
+// import 'foundation-sites/dist/plugins/foundation.core.js';
+// import 'foundation-sites/dist/plugins/foundation.util.mediaQuery.js';
+// import 'foundation-sites/dist/plugins/foundation.util.box.js';
+// import 'foundation-sites/dist/plugins/foundation.util.keyboard.js';
+// import 'foundation-sites/dist/plugins/foundation.util.motion.js';
+// import 'foundation-sites/dist/plugins/foundation.util.nest.js';
+// import 'foundation-sites/dist/plugins/foundation.util.timerAndImageLoader.js';
+// import 'foundation-sites/dist/plugins/foundation.util.touch.js';
+// import 'foundation-sites/dist/plugins/foundation.util.triggers.js';
 
 // -- plugins
 // import 'foundation-sites/dist/plugins/foundation.accordion.js';

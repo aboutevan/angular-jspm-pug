@@ -64,7 +64,8 @@
           "anonymous": "always",
           "named": "always"
         }
-      ]
+      ],
+      "import/no-extraneous-dependencies": 0
     }
   },
   "license": "MIT",

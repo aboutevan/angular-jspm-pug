@@ -29,7 +29,7 @@ instead of modularizing */
 gulp.task('pug-rebuild', ['pug-pages'], getTask('pug-rebuild'));
 
 // Scripts
-gulp.task('scripts', getTask('scripts', config.js));
+gulp.task('scripts', ['lint'], getTask('scripts', config.js));
 gulp.task('lint', getTask('lint', config.js));
 
 // Styles
